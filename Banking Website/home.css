@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+
+img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Nav Bar Section */
+
+nav {
+  position: fixed;
+  width: 94.5%;
+  margin: 0px 40px;
+  z-index: 1000;
+}
+
+.nav-content {
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  position: fixed;
+  position: relative;
+  top: -320px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 32px;
+}
+
+ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: 9px;
+}
+
+a:hover {
+  color: white;
+}
+
+.home {
+  color: white;
+  padding: 8px 16px;
+  background-color: #262626;
+  border-radius: 50px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.signup {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.signup:hover {
+  background-attachment: #1c1c1c;
+}
+
+.login {
+  padding: 12px 24px;
+  background-color: #caff33;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  border: none;
+}
+
+.login:hover {
+  background-color: #bbf125;
+}
+
+button {
+  cursor: pointer;
+  background-color: #caff33;
+}
+
+/* Home Page Content */
+
+.content {
+  margin-left: 40px;
+}
+
+.caption {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  background-color: #262626;
+  border-radius: 50px;
+  padding: 8px;
+  align-items: center;
+  width: 31%;
+}
+
+.content h4 {
+  font-size: 34px;
+  font-weight: 600;
+  width: 89%;
+  line-height: 150%;
+  margin-top: 6px;
+}
+
+.content span {
+  color: #caff33;
+}
+
+.descripe {
+  width: 88%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #e4e4e7;
+  line-height: 150%;
+  margin-top: 8px;
+}
+
+.open-account {
+  padding: 14px 24px;
+  border: none;
+  font-size: 14px;
+  border-radius: 50px;
+  margin-top: 32px;
+}
+
+.open-account:hover {
+  background-color: #bbf125;
+}
+
+.home-banner {
+  display: flex;
+  position: relative;
+  top: -160px;
+}
+
+.image img {
+  width: 480px;
+}
+
+/* Our Products */
+
+.our-products {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: -48px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-tittle h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.product-tittle span {
+  color: #caff33;
+}
+
+.product-tittle p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-top: 8px;
+  width: 70%;
+  line-height: 150%;
+}
+
+.product-btn {
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  border-radius: 50px;
+  height: 62px;
+  padding: 0px 12px;
+}
+
+.product-btn button {
+  position: relative;
+  top: 15px;
+}
+
+.toggle-active {
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: none;
+}
+
+.toggle-inactive {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+}
+
+/* Product Card Container */
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(
+    180deg,
+    rgba(202.47, 255, 51, 0.1) 0%,
+    rgba(202.47, 255, 51, 0) 47%
+  );
+  border-radius: 50px;
+  border: 1px rgba(202.47, 255, 51, 0.2) solid;
+  justify-items: center;
+  position: relative;
+  top: 8%;
+  left: 8%;
+}
+
+.product-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(
+    180deg,
+    rgba(202.47, 255, 51, 0.05) 0%,
+    rgba(202.47, 255, 51, 0) 100%
+  );
+  border-radius: 70px;
+  position: absolute;
+  margin-left: 8%;
+}
+
+.icon-circle img {
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+
+/* Product Content */
+
+.product-content h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.product-content p {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.product-container {
+  width: 25%;
+  margin-top: 24px;
+}
+
+.product-content {
+  padding-top: 100px;
+}
+
+.border {
+  height: 190px;
+  width: 2px;
+  background-color: #1a1a1a;
+  border-right: 1px solid #262626;
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+
+/* Usecase Container Section */
+
+.usecase-container {
+  margin: 100px 40px;
+}
+
+.usecase-tittle h3 {
+  color: #caff33;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.usecase-tittle p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-top: 8px;
+  width: 70%;
+  line-height: 150%;
+}
+
+/* Use Case Icons and cards */
+
+.usecase-content {
+  margin-top: 48px;
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.usecase-icons {
+  width: 52%;
+  height: 440px;
+  border-radius: 20px;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.icon-cards {
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  padding: 24px;
+  width: 34%;
+  height: 120px;
+  border-radius: 12px;
+}
+
+.icons-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+}
+
+#usecase-icon {
+  width: 64px;
+  height: 64px;
+  left: 14%;
+}
+
+#usecase-icon-2 {
+  width: 64px;
+  height: 64px;
+  left: 58%;
+}
+
+#usecase-icon-4 {
+  width: 64px;
+  height: 64px;
+  left: 58%;
+}
+
+#usecase-circle {
+  width: 48px;
+  height: 48px;
+  top: 8px;
+  left: 8px;
+}
+
+#usecase-img {
+  top: 12px;
+  left: 12px;
+}
+
+.icon-cards h5 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 150%;
+  align-content: center;
+  position: relative;
+  top: 70%;
+}
+
+/* Usecase Indivitual */
+
+.usecase-indivitual {
+  width: 48%;
+}
+
+.ind-tittle h4 {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.ind-tittle p {
+  font-size: 16px;
+  color: #b3b3b3;
+  line-height: 150%;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+/* Percentage Value */
+
+.ind-percentage {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.percentage-value{
+  width: 30%;
+}
+
+.percentage-value h2 {
+  font-size: 36px;
+  color: #caff33;
+  font-weight: 400;
+}
+
+.percentage-value p {
+  font-size: 14px;
+  color: #b3b3b3;
+  line-height: 150%;
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+.per-border{
+  width: 3px;
+  height: 40px;
+  border-left: 1px dashed #262626;
+}
+
+.outline-btn{
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  border-radius: 50px;
+  padding: 14px 20px;
+  color: white;
+  margin-top: 36px;
+  cursor: pointer;
+}
+
+/* Second Use Case Condainer */
+
+#value-2{
+  width: 20%;
+}
+
+.second-usecase{
+  margin-top: 68px;
+  display: flex;
+  gap: 16px;
+}
+
+#abstract-img{
+  position: relative;
+  left: 66%;
+  transform: rotate(90deg);
+}
+
+.outline-btn:hover{
+  background-color: #262626;
+}
+
+/* Our Feature Container */
+
+.feature-container {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.feature-tittle h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.feature-tittle span {
+  color: #caff33;
+}
+
+.feature-tittle p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-top: 8px;
+  width: 70%;
+  line-height: 150%;
+}
+
+/* Feature Sidebar */
+
+.feature-sidebar{
+  width: 15%;
+  height: 178px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 32px;
+  text-align: center;
+}
+
+.feature-btn{
+  background-color: transparent;
+  color: white;
+  border: 1px solid #262626;
+  padding: 14px 20px;
+  border-radius: 50px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.feature-btn:hover{
+  background-color: #262626;
+}
+
+#feature-second{
+  margin: 20px 0px;
+}
+
+#feature-select{
+  color: #caff33;
+}
+
+/* Feature text box content */
+
+.content-box{
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  width: 42%;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.box-tittle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-tittle h6{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.content-box p{
+  margin-top: 24px;
+  color: #B3B3B3;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.feature-content{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.feature-content-box{
+  display: flex;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+/* FAQ Container */
+
+.faq-container{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.faq-tittle h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.faq-tittle span {
+  color: #caff33;
+}
+
+.faq-tittle p {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-top: 8px;
+  width: 70%;
+  line-height: 150%;
+}
+
+/* FAQ Box Container */
+
+.faq-box{
+  padding: 32px;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  width: 44%;
+}
+
+.faq-box h6{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.faq-box hr{
+  border: 1px solid #262626;
+  margin: 24px 0px;
+}
+
+.faq-box p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 150%;
+  color: #B3B3B3;
+}
+
+.faq-box-container{
+  margin-top: 48px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Outline Load more FAQ */
+
+.outline-faq{
+  text-align: center;
+  padding: 14px 20px;
+  border: 1px solid #262626;
+  border-radius: 50px;
+  color: white;
+  background-color: #1c1c1c;
+  margin-left: 45%;
+  margin-top: 32px;
+}
+
+/* Adv Container */
+
+.adv{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+
+.adv-container{
+  width: 100%;
+  border-radius: 20px;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  height: 190px;
+}
+
+.text-content h4{
+font-size: 24px;
+}
+
+.text-content span{
+  color: #caff33;
+}
+
+.text-content p{
+font-size: 14px;
+color: #B3B3B3;
+line-height: 150%;
+font-weight: 300;
+margin-top: 12px;
+}
+
+.text-content{
+  width: 75%;
+}
+
+.adv-btn{
+  padding: 14px 20px;
+  border-radius: 50px;
+  border: none;
+  height: 48px;
+}
+
+.btn-content{
+  margin-left: 42px;
+  margin-right: 42px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -170px;
+  align-items: center;
+}
+
+/* Footer Section */
+
+footer{
+  margin-top: 100px;
+  background-color: #1c1c1c;
+  width: 100%;
+}
+
+.section-1 img{
+ margin-left: 45%;
+ margin-top: 60px;
+ margin-bottom: 24px;
+}
+
+footer hr{
+  border: 1px solid #262626;
+  width: 92%;
+  margin-bottom: 32px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.section-1{
+  margin-bottom: 32px;
+}
+
+.section-2{
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.email, .call, .location{
+ display: flex;
+ gap: 4px;
+}
+
+/* Social Media */
+
+.social-media{
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+  padding: 12px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.social-media h6, p{
+  font-size: 14px;
+  font-weight: 300;
+  color: #B3B3B3;
+}
+
+.social-media img, p{
+  cursor: pointer;
+}
+
+
+/* Career Page Section */
